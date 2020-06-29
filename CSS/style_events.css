@@ -1,0 +1,145 @@
+.header-img {
+  width: 100%;
+  height: 400px;
+  background: url('header.png');
+  background-size: cover;
+}
+.ontop {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;}
+
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .active {color: black; background-color: #FFE7C2;}
+
+  ul li ul li {
+    display:none;
+  }
+
+  ul li:hover ul li{
+    display: block;
+  }
+
+.title-img {
+  width: 100%;
+  height: 300px;
+  background: url('title_events.png');
+  background-size: cover;
+  padding-bottom: 60px;
+}
+
+*{
+  box-sizing: border-box;
+  font-family:Garamond,Times;
+  text-align: center;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+body {
+ background-image: url("bg.jpg");
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  color:gold;
+  font: bold;
+  text-shadow: 2px 2px 5px white;
+
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  text-shadow: 2px 2px 5px gold;
+}
+
+.my {
+  color: red;
+}
+
+.box {
+  float:left;
+  width: 33.33%;
+  padding: 5px;
+  background-color: hsla(38, 100%, 84%, 0.5);
+  color: black;
+  border-radius: 4px;
+
+}
+
+.box img {
+  width:250px;
+  height: 250px;
+  padding: 10px;
+  margin-left: 90px;
+  border-radius: 5px;
+}
+
+.box img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  overflow: auto;
+}
+
+
+.eid, .cny, .deepavali, .christmas {
+  background-color:hsla(38, 100%, 84%, 0.3);
+  color: black;
+  margin: 60px;
+  padding: 20px;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+}
+
+
+.fixed-footer{
+        width: 100%;
+          position:fixed;
+          left: 0;
+          bottom: 0;
+          padding: 10px 0;
+          color: #fff;
+          background-color: #333;
+
+      }

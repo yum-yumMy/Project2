@@ -1,0 +1,158 @@
+.header-img {
+  width: 100%;
+  height: 400px;
+  background: url('header.png');
+  background-size: cover;
+}
+
+.ontop {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;}
+
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  ul li ul li {
+    display:none;
+  }
+
+  ul li:hover ul li {
+    display: block;
+  }
+
+  .active {color: black; background-color: #FFE7C2;}
+
+.title-img {
+  width: 100%;
+  height: 300px;
+  background: url('title_cookbook.png');
+  background-size: cover;
+  padding-bottom: 60px;
+}
+
+*{
+    font-family:Garamond,Times;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+.container1{
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+body {
+  padding-bottom: 60px;
+  background-image:url("bg.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+h2 {
+  font-size:45px;
+}
+
+p {
+  font-size: 20px;
+}
+
+div {
+  background-color: #333;
+}
+.content{background-color: hsla(38, 100%, 84%, 0.3)}
+
+img{
+    width: auto;
+    height: 50%
+}
+
+.card{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: hsla(38, 100%, 84%, 0.3);
+    margin-bottom: 2rem;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card h2{
+    margin-bottom: 2rem;
+}
+
+.card img{
+    height: 400px;
+}
+
+.card > div{
+    padding: 2rem;
+}
+
+.card:nth-child(even) img {
+    order:2
+}
+
+.btn{
+
+    font-size: 20px;
+    display: inline-block;
+    background: #262626;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 0.8em;
+}
+.btn:hover{
+    background: #262626;
+    color: #fff;
+    opacity: 0.8;
+}
+
+@media(max-width: 980px){
+    .card{
+        display: block;
+    }
+}
+
+.fixed-footer{
+        width: 100%;
+        position: fixed;
+        padding: 10px 0;
+        color: #fff;
+        bottom: 0;
+        text-align: center;
+    }
